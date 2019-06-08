@@ -64,7 +64,7 @@ client.on('message', msg => {
     if (message.author.bot) return;
     if (message.isMentioned(client.user))
     {
-    message.reply("**__Ameer__** : الان ليس هون سيرد عليك قريبا");
+    message.reply("**__Ameer__** : الان ليس هونا سيرد عليك قريبا");
     }
 });
 
