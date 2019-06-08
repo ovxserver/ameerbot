@@ -60,9 +60,6 @@ if (message.content.startsWith(prefixac + 'server')) {
     .setThumbnail(message.guild.iconURL)
     .setColor('RANDOM')
     message.channel.sendEmbed(embed)
-    
-    }
-    }); 
 if (message.content === `${prefixac}help`) {
 message.delete();
 const embed = new Discord.RichEmbed().setColor("RANDOM").setDescription(`**
