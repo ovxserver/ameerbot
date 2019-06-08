@@ -5,7 +5,7 @@ const client = new Discord.Client();
 client.on('ready', () => {console.log(`Logged in as ${client.user.tag}!`);});
 
 
-const prefixac = '!';
+const prefixac = 'me!';
 client.on('message', message => {
  let rebel = message.content.split(` `).slice(1).join(' ');
 if(message.author.id !== '420655491794862094') return ;
