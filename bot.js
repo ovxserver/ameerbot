@@ -60,7 +60,13 @@ client.on('message', msg => {
     }
   });
 
-
+  client.on('message', message=> {
+    if (message.author.bot) return;
+    if (message.isMentioned(client.user))
+    {
+    message.reply("**__Ameer__** : الان ليس هون سيرد عليك قريبا");
+    }
+});
 
 
 client.login(process.env.TOKEN);// لا تغير فيها شيء 
