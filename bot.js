@@ -25,9 +25,9 @@ if (message.content.startsWith(prefixac + 'setw')) {
 if(!rebel) return message.channel.send(`**ex ? ${prefixac}setw Hi**`).then(m => m.delete(3000));
 client.user.setActivity(rebel, { type: 'WATCHING' });
 message.channel.send("**تـــ تغيير الحالة ــم**");}
-if (message.content.startsWith(prefixac + 'embed')) {
+if (message.content.startsWith(prefixac + 'say')) {
 message.delete();
-if(!rebel) return message.channel.send(`**ex ? ${prefixac}embed Hi everyone**`).then(m => m.delete(3000));
+if(!rebel) return message.channel.send(`**ex ? ${prefixac}say Hi everyone**`).then(m => m.delete(3000));
 const embed = new Discord.RichEmbed()
 .setColor("RANDOM").setDescription(rebel);
 message.channel.send(embed)}
@@ -47,7 +47,7 @@ ex ? ${prefixac}sets Hi
 ${prefixac}setw ⇏ لتغيير حالتك إلى \`WATCHING\`
 ex ? ${prefixac}setw Hi
 ${prefixac}embed ⇏ لتكرار كلامك بأمبيد
-ex ? ${prefixac}embed Hi everyone
+ex ? ${prefixac}say Hi everyone
 ${prefixac}avatar ⇏ لعرض صورتك أو صورة أي شخص تمنشنه
 ex ? ${prefixac}avatar @rebel
 **`);
