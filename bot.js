@@ -54,6 +54,14 @@ ex ? ${prefixac}avatar @rebel
 message.channel.sendEmbed(embed).then(m => m.delete(17000));}
 });
 
+client.on('message', msg => {
+    if (msg.content === 'ameeryt') {
+      msg.reply('**https://www.youtube.com/channel/UCpohuVOWi8-eelf4LgwKIVw?view_as=subscriber**');
+    }
+  });
+
+
+
 
 client.login(process.env.TOKEN);// لا تغير فيها شيء 
 
